@@ -175,6 +175,27 @@ print_r($products);echo "<br/>";
 array_splice($products,-1);
 print_r($products);
 
+//Array functions
+$users=["damon","stefan","elena"]; echo "<br/>";
+// $users=10;
+// print_r($users); echo "<br/>";
+if(is_array($users)){
+    foreach($users as $x){
+        echo $x;
+        echo "<br>";
+    }
+}else{
+    echo "Not an array";
+}
+
+// unset($users[1]);
+// print_r($users);
+
+array_push( $users,"klaus");
+print_r($users);
+echo "<br>";
+print_r(array_keys($productDetails));
+
 
 //global and local variables
 $number=10;
@@ -195,4 +216,5 @@ echo $number;
 // echo "<pre>";
 // print_r($_SERVER);
 // echo "</pre>";
+
 ?>
