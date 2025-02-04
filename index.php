@@ -175,4 +175,24 @@ print_r($products);echo "<br/>";
 array_splice($products,-1);
 print_r($products);
 
+
+//global and local variables
+$number=10;
+function getNumber(){
+    global $number;
+    $number=90;
+    echo $number;
+}
+echo "<br/>";
+getNumber();
+echo "<br/>";
+echo $number;
+
+//Super global variables
+// echo "<pre>";
+// print_r($GLOBALS);
+// echo "</pre>";
+// echo "<pre>";
+// print_r($_SERVER);
+// echo "</pre>";
 ?>
