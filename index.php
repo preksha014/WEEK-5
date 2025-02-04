@@ -79,4 +79,100 @@ $str1 .= $str2;
 echo '<br/>';
 echo $str1;
 echo '<br/>';
+
+//functions
+//nested function
+$age;
+function test($age){
+    echo "age is less<br/>";
+    if($age>18){
+        function display($age){
+            echo "age is $age<br/>";
+        }
+       display($age);
+    }
+}
+test(78);
+
+//variable function
+
+function child(){
+    echo "child function is called<br/>";
+}
+
+$a="child";
+$a();
+
+function parent($x){
+    echo "parent function is called<br/>";
+    $x();
+}
+parent($a);
+
+//In-built functions
+$str="Preksha rana here";
+echo strlen($str);
+echo substr($str,8);
+echo "<br/>";
+
+echo date("d");
+echo date("M");
+echo date("d.m.y");
+echo "<br/>";
+
+echo is_string($str);
+echo "<br/>";
+
+$num=0;
+echo is_int($num);
+echo "<br/>";
+
+echo rand();echo "<br/>";
+
+// die;
+// exit();
+
+//Arrays-->indexed array, associative array,multi-dimensional array
+$products=["laptop","television","mobile"];
+
+foreach($products as $i){
+    echo $i;
+    echo "<br>";
+}
+
+$productDetails=[
+    "name"=>"laptop",
+    "price"=>"200000",
+    "quality"=>"good"
+];
+
+foreach($productDetails as $key=> $i){
+    echo $key ." is ".$i;
+    echo "<br>";
+}
+
+$productss=[
+    [1,"laptop","200000","good"],
+    [2,"television","80000","avearge"]
+];
+
+// echo "<pre>";
+// print_r($productss);
+// echo "</pre>";
+
+for($i=0;$i<count($productss);$i++){
+    for($j=0;$j<count($productss[$i]);$j++){
+        echo $productss[$i][$j];
+        echo "<br>";
+    }
+} 
+
+//Add and Remove array elements
+array_push($products,"washing machine");
+print_r($products);echo "<br/>";
+array_pop($products);
+print_r($products);echo "<br/>";
+array_splice($products,-1);
+print_r($products);
+
 ?>
