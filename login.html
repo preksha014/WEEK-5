@@ -6,10 +6,14 @@
     <title>Document1</title>
 </head>
 <body>
-    <form method="POST" action="login.php">
+    <form method="POST" action="login.php" enctype="multipart/form-data">
         <input type="text" name="username" placeholder="Enter your name"><br/>
         <input type="password" name="password" placeholder="Enter password"><br/>
         <button type="submit">Login</button>
+        <br/><br/>
+        <input type="file" name="fileUpload">
+        <br/>
+        <button>Upload</button>
     </form>
 </body>
 </html>
