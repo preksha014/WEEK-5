@@ -340,4 +340,98 @@ foreach ($items as $item) {
     echo "<a href=./files/$item>$item</a>";
     echo "<br/>";
 }
+
+//JSON data
+// $arr=["name"=>"preksha","age"=>21];
+// $jsonData=json_encode($arr);
+// echo $jsonData;
+
+// $jsonData='{"name":"preksha","age":21}';
+// $arr=json_decode($jsonData,true);
+// print_r($arr);
+// $arr=json_decode($jsonData);
+// print_r($arr);
+
+//Date and time
+echo date_default_timezone_get();
+date_default_timezone_set("Asia/Kolkata");
+echo date('d M Y');echo '<br/>';
+echo date("h:i:s A");echo '<br/>';
+
+//oops concepts
+//Parent class
+class Animal{
+    public $name;
+    //Constants
+    const animalPlace="Forest";
+    //static property
+    static public $animalCount="1000";
+    //Constructor
+    function __construct(){
+        $this->name="rabbit";
+    }
+    function getName(){
+        //Access Constant variable
+        echo self::animalPlace;echo " ->";
+        return $this->name;
+    }
+    function setName($name){
+        $this->name=$name;
+    }
+    //static method
+    static function animalPlace(){
+        echo self::animalPlace;
+    }
+    static public function animalCount(){
+        echo static::$animalCount;
+    }
+}
+//Child class
+class AnimalDetails extends Animal{
+    //Property overriding
+    public $name;
+    public $type;
+    static public $animalCount="30";
+    
+    function __construct(){
+        $this->name="horse";
+        $this->type="pet";
+    }
+    //Method overriding
+    function getName(){
+        return $this->name;
+    }
+    function setName($name){
+        $this->name=$name;
+    }
+    function getType(){
+        return $this->type;
+    }
+    function setType($type){
+        $this->type=$type;
+    }
+}
+
+echo Animal ::animalPlace;echo "<br>";
+$obj1=new Animal();
+echo $obj1->getName();echo "<br/>";
+$obj1->setName("cat");
+echo $obj1->getName();echo "<br/>";
+
+$obj2=new AnimalDetails();
+$obj2->setName("dog");
+echo $obj2->getName();echo "<br/>";
+echo $obj2->getType();echo "<br/>";
+
+$obj3=new AnimalDetails();
+echo $obj3->getName();
+$obj3->setName("donkey");echo "<br/>";
+echo $obj3->getName();echo "<br/>";
+
+//static method calling
+echo Animal::animalPlace();echo "<br/>";
+//late static binding
+$obj4=new AnimalDetails();
+echo $obj4->animalCount();
+
 ?>
