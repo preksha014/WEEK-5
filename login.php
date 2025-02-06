@@ -9,10 +9,10 @@
     //     echo "User password is ".$_POST['password'];
     // }
 
-    // if($_REQUEST){
-    //     echo 'User name is '.$_REQUEST['username'];echo "<br/>";
-    //     echo 'User password is '.$_REQUEST['password'];
-    // }
+    if($_REQUEST){
+        echo 'User name is '.$_REQUEST['username'];echo "<br/>";
+        echo 'User password is '.$_REQUEST['password'];
+    }
 
     print_r($_FILES);
 
