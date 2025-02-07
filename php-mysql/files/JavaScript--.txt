@@ -1,0 +1,111 @@
+JavaScript--
+
+----------How JavaScript code executed?---------
+Execution context--> 1)Memory (Variable Environment)
+		     2)Code (Thread of Execution)
+
+Call stack--> Managing execution contexts and order of execution
+(Execution context stack, program stack, control stack, runtime stack, machine stack)
+
+Any program in JavaScript-->1) Memory Creation phase
+			    2) Code Execution phase
+
+Hoisting--> We can use any variable and function before initialized it(because memory is allocated in memory creation phase)
+
+-----------------funcations------------------
+Functions--> Global Execution Context--> Local Execution Context
+
+window, this--> created by javascript engine for global space--> accessed by window.x, this,x, x
+
+undefined--> memory space is allocated and not defined-->memory is not allocated (because not initialized in code)
+
+Javascript-->loosely typed language-->does not attach variable to its data type
+
+
+---------------scope of variable-------------
+scope-->where i can use variable in the code
+
+lexical environment--> local memory + lexical (in order/hierarchy) environment of parent
+
+scope chain-->finding variable at local memory then lexical environment of its parent again and again
+
+
+----------------let, const, var------------------
+let, const declarations are stored into different storage space
+
+time between hosting into other memory zone to its initialization is called temporal dead zone
+
+Reference error-->whenever you try to access variable inside temporal dead zone. refence error occur
+
+Syntax error-->redeclaration of let variables, not initialize value of const type variable
+
+Type error--> assignment of value to const type variable
+
+const-->must initialized value of const type variable
+
+let,const-->block scope (we cannot access the variable values outside block)
+
+shadowing-->
+var---> block scope variable shadows the value of outside value of variable 
+let-->two different spaces-script and block
+shadow let using let variable
+
+
+closures-->function + lexical scope
+
+
+
+
+-----------------JS DOM Manipulation-------------
+DOM- Document Object Model--> HTML file-->convert into-->JS Object--> object-document
+
+BOM-->Browser Object Model--> browser changes except HTML content
+
+Access HTML element--> 	getElementByID
+			getElementByClassName
+			getElementByTagName
+			$0
+			querySelector
+			querySelectorAll
+
+Update HTML element-->	innerHTML
+			outerHTML
+			text-content
+			innerText
+Create and append child element--> 	createElement
+					appendChild
+insertAdjacentElement-->beforebegin, afterbegin, beforeend, afterend
+
+Removal--> parent.removeChild(child)
+let parent=child.parentElement;
+
+
+.style-->single property
+.style.cssText-->multiple property
+.setAttribute()-->override existing value
+.className-->set/get className
+.classList-->get multiple class in array format
+		add
+		remove
+		toggle
+		contains
+
+
+
+---------------------Events--------------------
+<event-target>.addEventListener(<event-type>,<function-to perform action>)
+
+Phases of events-->
+capturing phase--try to reach target element
+At target phase
+bubbling phase--try to reach root element
+
+
+
+---------------methods of javascript---------------
+1) window.getSelection().toString()
+2) window.onscroll=()=>{
+	if((window.innerHeight+window.pageYOffset)>=document.body.offsetHeight){
+	clg;
+}
+}

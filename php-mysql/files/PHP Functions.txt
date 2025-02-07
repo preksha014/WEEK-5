@@ -1,0 +1,48 @@
+## 1. Important PHP Array Functions
+- `count($array)`: Returns the number of elements in an array.
+- `array_push($array, $value1, $value2)`: Adds one or more elements to the end of an array.
+- `array_pop($array)`: Removes and returns the last element of an array.
+- `array_shift($array)`: Removes and returns the first element of an array.
+- `array_unshift($array, $value1, $value2)`: Adds one or more elements to the beginning of an array.
+- `array_merge($array1, $array2)`: Merges two or more arrays into one.
+- `array_combine($keys, $values)`: Creates an array by using one array for keys and another for values.
+- `array_keys($array)`: Returns all the keys of an array.
+- `array_values($array)`: Returns all the values of an array.
+- `array_search($value, $array)`: Searches for a value in an array and returns its key.
+- `in_array($value, $array)`: Checks if a value exists in an array (returns `true` or `false`).
+- `array_reverse($array)`: Returns an array with elements in reverse order.
+- `array_slice($array, $start, $length)`: Extracts a portion of an array.
+- `array_splice($array, $start, $length, $replacement)`: Removes a portion of an array and replaces it with another.
+- `array_unique($array)`: Removes duplicate values from an array.
+- `sort($array)`: Sorts an array in ascending order (values only).
+- `rsort($array)`: Sorts an array in descending order.
+- `asort($array)`: Sorts an associative array in ascending order (values only).
+- `ksort($array)`: Sorts an associative array by keys in ascending order.
+## 2. Important PHP String Functions
+- `strlen($string)`: Returns the length of a string.
+- `str_replace($search, $replace, $string)`: Replaces all occurrences of a string with another string.
+- `strpos($string, $search)`: Finds the position of the first occurrence of a substring.
+- `substr($string, $start, $length)`: Extracts a portion of a string.
+- `strtolower($string)`: Converts a string to lowercase.
+- `strtoupper($string)`: Converts a string to uppercase.
+- `ucfirst($string)`: Converts the first character of a string to uppercase.
+- `ucwords($string)`: Converts the first letter of each word to uppercase.
+- `trim($string)`: Removes whitespace from both sides of a string.
+- `ltrim($string)`: Removes whitespace from the beginning of a string.
+- `rtrim($string)`: Removes whitespace from the end of a string.
+- `explode($delimiter, $string)`: Splits a string into an array based on a delimiter.
+- `implode($glue, $array)`: Joins array elements into a string with a glue string.
+- `strrev($string)`: Reverses a string.
+- `number_format($number, $decimals)`: Formats a number with grouped thousands.
+- `md5($string)`: Generates an MD5 hash of a string.
+- `sha1($string)`: Generates a SHA1 hash of a string.
+- `htmlspecialchars($string)`: Converts special characters to HTML entities to prevent XSS attacks.
+## 3. Best Practices
+1. Use Meaningful Variable Names.
+2. Use Proper Indentation & Spacing.
+3. Use `isset()` and `empty()` to Avoid Undefined Variable Errors.
+4. Use Strict Comparisons (`===` Instead of `==`).
+5. Use Constants Instead of Hardcoded Values.
+6. Sanitize & Validate User Input.
+7. Error Handling
+ 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form method="post" action="data.php" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Enter your name" required >
+        <br><br>
+        <input type="email" name="email" placeholder="Enter your email">
+        <br><br>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <br><br>
+        <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender"value="female"><label for="female">Female</label>
+        <br><br>
+        <select name="city">Select your city:
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Surat">Surat</option>
+            <option value="Bharuch">Bharuch</option>
+        </select><br><br>
+        <input type="checkbox" name="skills[]" value="html">
+        <spam>HTML</spam><br><br>
+        <input type="checkbox" name="skills[]" value="css">
+        <spam>CSS</spam><br><br>
+        <input type="checkbox" name="skills[]" value="javascipt">
+        <spam>JavaScript</spam><br><br>
+        <input type="checkbox" name="skills[]" value="php">
+        <spam>PHP</spam><br><br>
+        <textarea name="bio" placeholder="Enter your details"></textarea><br><br>
+        <label for="file">Upload you Resume
+            <input type="file" name="file">
+        </label><br><br>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>

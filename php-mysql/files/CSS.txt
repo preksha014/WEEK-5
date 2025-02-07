@@ -1,0 +1,97 @@
+/* selector target any html --> element, id, class, group and style them */
+/* element*/
+/* p{
+    background-color: aquamarine;
+}
+footer{
+    border:12px;
+} */
+
+/* id selector */
+/* #p1{
+    background-color: blue;
+} */
+
+/* class selector */
+/* .paraclass{
+    background-color: yellow;
+}
+
+p,footer{
+    width: 500px;
+} */
+
+/* fonts-->gap between line, external font family, degree of darkness, font size */
+/* p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+} */
+
+/* colors--> name, rgb value, hex, h-hue s-saturation l-lightness  */
+
+/**/
+/* h1{
+    background-color: yellow;
+    border-style:dashed;
+    border-width: 2px;
+    border-color: blue;
+}
+
+#firstPara{ */
+    /* border:solid black 2px;
+    padding:20px 30px 40px 50px;
+    margin:30px;    */
+    /* padding: top right bottom left */
+    /* padding: top-bottom(vertical) right-left(horizontal) */
+    /* four side padding and margin*/
+    /* background-color: beige;
+    width:400px;
+    height:100px;
+    box-sizing: border-box;
+}
+
+#secondPara{
+    background-color: brown;
+    width:400px;
+    height:100px;
+    padding:50px; */
+    /* box-sizing: border-box; */
+/* }
+
+#thirdPara{
+    background-color: pink;
+} */
+
+/* Boxmodel-->All content displayed in rectangular form
+content-->padding-->border-->margin*/
+
+/* Display property-->elements how to display, render-->block elements, inline elements, inline-block elements*/
+
+/*Position property--> how to position html elements and tags
+1-->static --> No H/W 
+2-->relative--> h/w related to window-->gap is maintained
+3-->absolute--> h/w related to nearest positioned ancestor -->overlap --> gap is note maintained
+4-->fixed--> fixed at its position (entire webpage)
+5-->sticky--> fixed at its position at its parent container
+*/
+
+/* Date-10/01/25 */
+/*CSS Units
+1) % -->  % of immediate parent
+2) px--> 1/96 inch
+3) vw--viewport width--> relative to viewport(screen visible to user)
+4) vh--viewport height-->
+5) rem-->
+6) em--> relative length unit width-->font size of element itself --16 px*width
+                            font-size-->depend
+*/
+
+/*float, overflow, clear*/
+/*flexbox*/
+
+
+Learn about CSS properties such as flexbox and grid for responsive layouts and implemented it
+Explored about CSS property units such as px, vw, vh, rem, em
+Explored about properties such as float, overflow and clear for responsive layout of webpage
